@@ -15,8 +15,12 @@ function imageZoom()
     let box = document.createElement("div");
     let bigImage = document.createElement("img");
     box.appendChild(bigImage);
-    let 
-    document.body.insertBefore(box, )
 
+    let firstElement = document.body.firstChild;
+    document.body.insertBefore(box, firstElement);
+    
+    box.style.width = "100%";
+    box.style.height = "100%";
+    box.style.backgroundColor = "black";
     
 }
